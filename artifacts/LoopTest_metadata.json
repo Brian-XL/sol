@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "list",
+						"type": "address[]"
+					}
+				],
+				"name": "AddBatch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "list",
+						"type": "address[]"
+					}
+				],
+				"name": "CheckRepeat",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "exist",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Print",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/loop_test.sol": "LoopTest"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/loop_test.sol": {
+			"keccak256": "0x5f6163465d40203d6c83461e44ca59072923a929442cdac607fa1b710e747698",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://310d0ffdd08f8775e5997ab4afb221f8768bc566f532a5a3e8f988077bed1fde",
+				"dweb:/ipfs/QmbaTAraM8aubcVbahLsAaarjb6vLeRw1xBMQFAexEB2vT"
+			]
+		}
+	},
+	"version": 1
+}
