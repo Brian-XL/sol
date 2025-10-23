@@ -8,6 +8,30 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					}
+				],
+				"name": "binarySearch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "num",
 						"type": "uint256"
@@ -115,11 +139,11 @@
 	},
 	"sources": {
 		"contracts/homework/test_2.sol": {
-			"keccak256": "0xe880d2a657768a6a4b73fdfe8f10eb4212da46ea3b3cfb04378e79d815aeb8f9",
+			"keccak256": "0xd5799b25a03d2e5254a34ae4f5687bcfbc80aaac33c3adcc5ca700d9864e8b9b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://13eac64339f358462368aa7c42b665b21c1d15b43329cb861324c19c8e2274ed",
-				"dweb:/ipfs/QmTwyX8J8fcbEVSXLpbyZwLJpcGmKwPFUaJqHcm3T7aqei"
+				"bzz-raw://1250e4d7600466296af42666ff6beaebcfcd32ebf14a64637be6d5f89b34afce",
+				"dweb:/ipfs/QmRQRxNr2RoJMN7ZxKm5ifCHeGtn1K57TVJDWgk7megNdS"
 			]
 		}
 	},

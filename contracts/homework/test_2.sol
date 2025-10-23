@@ -110,4 +110,14 @@ contract Test_2 {
 
         return full;
     }
+
+
+    //二分查找 (Binary Search):在一个有序数组中查找目标值。
+
+    function binarySearch(uint[] calldata arr, uint target) public pure returns(uint) {
+        uint len = arr.length;
+
+        
+    }
+
 }
