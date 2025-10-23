@@ -8,6 +8,68 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "intToRoman",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr1",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "arr2",
+						"type": "uint256[]"
+					}
+				],
+				"name": "mergeArrays",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"name": "romanToInt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "line",
 						"type": "string"
@@ -53,11 +115,11 @@
 	},
 	"sources": {
 		"contracts/homework/test_2.sol": {
-			"keccak256": "0xa9a5e59ef1bc00e2344dfd96af15982f4fc1fe4f08f852356fd2469581b11c5f",
+			"keccak256": "0xe880d2a657768a6a4b73fdfe8f10eb4212da46ea3b3cfb04378e79d815aeb8f9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://11c287da9bb8dd0543b558ddb442c8e34339e7e5cfc44ef016d86ec10a24d847",
-				"dweb:/ipfs/QmRxfXa6v2SjqqotXoDBgCENU4ajirMdMG3ryerDx3FQyr"
+				"bzz-raw://13eac64339f358462368aa7c42b665b21c1d15b43329cb861324c19c8e2274ed",
+				"dweb:/ipfs/QmTwyX8J8fcbEVSXLpbyZwLJpcGmKwPFUaJqHcm3T7aqei"
 			]
 		}
 	},
