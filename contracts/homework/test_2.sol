@@ -147,8 +147,9 @@ contract Test_2 {
     }
 
 
-        function binarySearch2(uint[] calldata arr, uint target) public pure returns(int) {
+    function binarySearch2(uint[] calldata arr, uint target) public pure returns(int) {
         uint len = arr.length;
+        if (len == 0) return -1;
         uint left = 0;
         uint right = len - 1;
 
