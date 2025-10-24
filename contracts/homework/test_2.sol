@@ -114,10 +114,58 @@ contract Test_2 {
 
     //二分查找 (Binary Search):在一个有序数组中查找目标值。
 
+    //[1,3,5,7,8,9,10,13]
+    // 0,1,2,3,4,5,6,7
+
     function binarySearch(uint[] calldata arr, uint target) public pure returns(uint) {
         uint len = arr.length;
+        uint left = 0;
+        uint right = len - 1;
 
-        
+        uint middle = 9999;
+
+        while(left + 1 < right){
+            middle = (left + right) / 2;
+            if (target > arr[middle]) {
+                left = middle;
+            } else if (target < arr[middle]){
+                right = middle;
+            } else {
+                return middle;
+            }
+        }
+
+        if(arr[left] == target){
+            middle = left;
+        } else if(arr[right] == target) {
+            middle = right;
+        } else {
+            middle = 9999;
+        }
+
+        return middle;
+    }
+
+
+        function binarySearch2(uint[] calldata arr, uint target) public pure returns(int) {
+        uint len = arr.length;
+        uint left = 0;
+        uint right = len - 1;
+
+        uint middle = 0;
+
+        while(left <= right){
+            middle = (left + right) / 2;
+            if (target > arr[middle]) {
+                left = middle + 1;
+            } else if (target < arr[middle]){
+                right = middle - 1;
+            } else {
+                return int(middle);
+            }
+        }
+
+        return int(middle);
     }
 
 }
