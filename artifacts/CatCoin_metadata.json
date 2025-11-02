@@ -64,6 +64,30 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					},
@@ -180,19 +204,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "total",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "totalSupply",
 				"outputs": [
 					{
@@ -274,11 +285,11 @@
 	},
 	"sources": {
 		"contracts/task2/job1.sol": {
-			"keccak256": "0x5b3e37000c1af543959f561144205e5f598e7daa333ce905a0576572b53d9be8",
+			"keccak256": "0x13ab204465f7b072a87e0c1c366905d550c90cdd1b72c9b9a27a228a8914140f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3eed296dc5f292bc1130a3a6f816021dcac2876199854a687e63000f7c89172a",
-				"dweb:/ipfs/QmQDwyeg1mL8j9qmuXjQQhJJjogpvHsuBwbkcNoRmDRFi5"
+				"bzz-raw://9059876544fcf66a559f0378eaa2f18c598a847446bf6e3920e42b0ebb247b42",
+				"dweb:/ipfs/QmVXhSep3T1UCiGPoXXEyBJK9J6Av4SfZZxFRLZPTk3QAt"
 			]
 		}
 	},
