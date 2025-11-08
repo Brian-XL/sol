@@ -8,11 +8,17 @@ contract BeggingContract {
     mapping (address => uint) donations;
     address public owner;
 
-    constructor() {
+    uint public startTime;
+    uint public endTime;
+
+    constructor(uint _startTime, uint _endTime) {
+        require(_startTime < endTime, "Invalid input");
         owner = msg.sender;
+        startTime = _startTime;
+        endTime = _endTime;
     }
 
-    function donate() external payable {
+    function donate() external payable timeCheck {
         require(msg.value >= 0, "not enough eth");
         uint balance = donations[msg.sender] + msg.value;
         donations[msg.sender] = balance;
@@ -25,6 +31,11 @@ contract BeggingContract {
         return donations[user];
     }
 
+    modifier timeCheck {
+        require(block.timestamp >= startTime, "donation not started");
+        require(block.timestamp <= endTime, "donation period ended");
+        _;
+    }
     modifier onlyOwner {
         require(msg.sender == owner, "must be owner");
         _;
@@ -35,14 +46,14 @@ contract BeggingContract {
         emit Withdraw(value);
     }
 
-    receive() external payable {
+    receive() external payable timeCheck{
         require(msg.value >= 0, "Not enough eth");
         uint balance = donations[msg.sender] + msg.value;
         donations[msg.sender] = balance;
         emit Donation(msg.sender, msg.value);
         updateRanks(msg.sender, balance);
     }
-    fallback() external payable {
+    fallback() external payable timeCheck{
         require(msg.value >= 0, "Not enough eth");
         uint balance = donations[msg.sender] + msg.value;
         donations[msg.sender] = balance;

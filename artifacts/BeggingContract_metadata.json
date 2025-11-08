@@ -6,7 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_startTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_endTime",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -78,6 +89,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "endTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -136,6 +160,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "startTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -174,11 +211,11 @@
 	},
 	"sources": {
 		"contracts/task2/job3.sol": {
-			"keccak256": "0x1fa892f3bb103505b14ee70c6d9dd354ca936081facefcc55f516aae2a45e78e",
+			"keccak256": "0xb3e966653eb98ed114b517d627416f842f5cc1b1929ebe8a26e20f1e050b6961",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1564b4278064ead037be848eda1137ebfa0a2107d34b5f851f38cab7c2c0cdf",
-				"dweb:/ipfs/QmVxjFnJzqLfDiecrKAHV4VYcSJfbTQZunhVeoc4WmAQHC"
+				"bzz-raw://20e8b42b6699afcdd53b6a7d297795a97d877de3edf9cd1380d96bcbb9be28aa",
+				"dweb:/ipfs/QmVf5nLpUGFKM3XPmsauayXhKWsktSuK3FKxmAbJ3EQqGd"
 			]
 		}
 	},
